@@ -1,0 +1,28 @@
+.weather-search {
+  width: 100%;
+}
+
+.weather-hr {
+  width: 100%;
+}
+
+.btn {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.today-section {
+  border: 1px solid;
+  padding: 0.3rem;
+}
+
+.weather-card {
+  margin: 0.25rem;
+  width: 25%;
+  color: white;
+  background-color: grey;
+}
+
+.weather-card .card-body {
+  padding: 0.5rem;
+}
