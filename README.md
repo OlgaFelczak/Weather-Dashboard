@@ -6,8 +6,7 @@ This is a simple application that allows users to see the weather forecast for c
 
 ## Screenshot
 
-![]()
-![]()
+![Main View](./screenshot/MainView.png)
 
 ## User Story
 
@@ -20,6 +19,7 @@ SO THAT I can plan a trip accordingly
 When a user searches for a city they are presented with current and future conditions for that city and that city is added to the search history.
 
 When a user views the current weather conditions for that city they are presented with:
+
 - The city name
 - The date
 - An icon representation of weather conditions
@@ -28,6 +28,7 @@ When a user views the current weather conditions for that city they are presente
 - The wind speed
 
 When a user views future weather conditions for that city they are presented with a 5-day forecast that displays:
+
 - The date
 - An icon representation of weather conditions
 - The temperature
@@ -39,4 +40,4 @@ When a user clicks on a city in the search history they are again presented with
 
 GitHub URL: https://github.com/OlgaFelczak/Weather-Dashboard
 
-Live Site URL:
+Live Site URL: https://olgafelczak.github.io/Weather-Dashboard/
