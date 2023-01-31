@@ -46,7 +46,10 @@ function renderForecast(city, forecast) {
 }
 
 function renderCurrentDay(city, forecastForToday) {
-  const cityLine = $("<h2>").text(`${city} (${forecastForToday.date})`);
+  const icon = $("<img>").attr("src", forecastForToday.iconUrl);
+  const cityLine = $("<h2>")
+    .text(`${city} (${forecastForToday.date})`)
+    .append(icon);
   const tempLine = $("<p>").text(`Temp: ${forecastForToday.temp}°C`);
   const windLine = $("<p>").text(`Wind: ${forecastForToday.wind} KPH`);
   const humLine = $("<p>").text(`Humidity: ${forecastForToday.humidity}%`);
@@ -71,13 +74,16 @@ function render4DayForecast(forecastFor4Days) {
 }
 
 function createSingleDay(singleDayForecast) {
+  const icon = $("<img>").attr("src", singleDayForecast.iconUrl);
   const pTemp = $("<p>").text(`Temp: ${singleDayForecast.temp}°C`);
   const pWind = $("<p>").text(`Wind: ${singleDayForecast.wind} KPH`);
   const pHum = $("<p>").text(`Humidity: ${singleDayForecast.humidity}%`);
   const cardTitle = $("<h5>")
     .addClass("card-title")
     .text(singleDayForecast.date);
-  const cardText = $("<div>").addClass("card-text").append(pTemp, pWind, pHum);
+  const cardText = $("<div>")
+    .addClass("card-text")
+    .append(icon, pTemp, pWind, pHum);
   const cardBody = $("<div>").addClass("card-body").append(cardTitle, cardText);
   const card = $("<div>").addClass("card weather-card").append(cardBody);
 

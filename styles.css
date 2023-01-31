@@ -13,6 +13,7 @@
 
 .today-section {
   border: 1px solid;
+  background-color: rgb(226, 226, 226);
   padding: 0.3rem;
 }
 
@@ -20,7 +21,7 @@
   margin: 0.25rem;
   width: 25%;
   color: white;
-  background-color: grey;
+  background-color: rgb(153, 153, 153);
 }
 
 .weather-card .card-body {
